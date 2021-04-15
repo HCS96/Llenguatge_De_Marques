@@ -18,33 +18,22 @@
       </div>
     </div>
 
-   
-    <form id="formulario" enctype="multipart/form-data" action="upload.php" method="post">
-      <div id="elementos">
-        <input type="text" name="" id="nombre" placeholder="TU NOMBRE">
-        <input type="file" name="file" id="archivo" placeholder="SELECCIONA UN ARCHIVO">
-        <div>
-         <input type="checkbox" name="" id="check">&nbsp;
-         <label for="check">Quiero enviar el link de descarga por email</label>
-        </div>
-        <input type="email" name="" id="correo" placeholder="EMAIL DEL DESTINATARIO">
-        <p class="mensajeTexto">Mensaje</p>
-        <textarea class="mensaje" placeholder="Escribe tu mensaje..."> </textarea>
-        <button type="submit" class="boton">Subir archivo</button>
 
 
 
 
-      </div>
-    </form>
+      <!--    <?php
 
+      $to = "hector.collado@mataro.epiaedu.cat";
+      $subject = "Asunto del email";
+      $message = "Hola guapo";
 
+      mail($to, $subject, $message);
+      
 
-
-
+      ?>
+    -->
     <footer id="peu"></footer>
-
-
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
