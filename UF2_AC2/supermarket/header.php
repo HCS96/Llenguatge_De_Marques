@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -55,7 +63,22 @@
 						</div>
 					</li>
 				</ul>
-				<a href="entrar.php" class="btn btn-primary my-0 mx-2">Entrar</a>
-				<a href="form_client.php" class="btn btn-outline-primary my-0">Nou client</a>
+				<?php
+
+					if(empty($_SESSION)){
+
+					echo "";
+					echo "<a href=\"form_client.php\" class=\"btn btn-outline-primary my-0\">Nou client</a>";
+
+					}else{
+
+					echo "<a href=\"entrar.php\" class=\"btn btn-primary my-0 mx-2\">JOselito</a>";
+					echo "<a href=\"form_client.php\" class=\"btn btn-outline-primary my-0\">Moroco</a>";
+
+
+
+					}
+
+					?>
 			</div>
 		</nav>

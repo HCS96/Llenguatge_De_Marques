@@ -26,8 +26,8 @@ function seguretatContrasenya($pContrasenya) {
 			$ascii = ord(substr($pContrasenya, $i, 1));
 
 			if ($ascii >= 65 && $ascii <= 90) $majuscules = true;
-			elseif ($ascii >= 48 && $ascii <= 57) $digits = true;
-			elseif ($ascii < 97 || $ascii > 122) $noAlfanumeric = true;
+			if ($ascii >= 48 && $ascii <= 57) $digits = true;
+			if ($ascii < 97 || $ascii > 122) $noAlfanumeric = true;
 		}
 
 		if ($majuscules) {
